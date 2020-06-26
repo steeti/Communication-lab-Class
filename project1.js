@@ -1,3 +1,7 @@
+var p1audio = $("#audiop1")[0];
+var p2audio = $("#audiop2")[0];
+var p3audio = $("#audiop3")[0];
+var p4audio = $("#audiop4")[0];
 
 function openoption(evt, optiontype) {
   var i, x, tablinks;
@@ -11,4 +15,14 @@ function openoption(evt, optiontype) {
   }
   document.getElementById(optiontype).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+function PlaySound(sound) {
+    var sound1=document.getElementById(sound);
+    sound1.play();
+}
+function StopSound(sound) {
+    var sound1=document.getElementById(sound);
+    sound1.pause();
+    sound1.currentTime = 0;
 }
