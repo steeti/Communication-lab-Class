@@ -1,0 +1,255 @@
+html {
+  background-image: url('background2.png');
+
+}
+
+body{
+  background-color:#e8e8e8;
+  margin:0;
+  padding:0;
+  margin-left:6%;
+  margin-right:6%;
+  margin-bottom:5%;
+}
+
+
+/* classes used for the tab headers */
+.left-alligned{
+  float:left;
+}
+.right-alligned{
+  float: right;
+}
+  
+.button1 {
+  background-color: #ffffff;
+  color: #57068c;
+  border: none;
+  padding: 16px 32px;
+  font-size: 150%;
+  float:left;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+
+}
+
+.button1:hover{
+  background-color: #696969;
+  color: #ffffff;
+  
+}
+.active {
+  background-color: #57068c;
+  color: #ffffff;
+  border: 2px solid #57068c;
+
+}
+
+
+.header{
+    overflow: hidden;
+    border-radius: 4px;
+    background-color:#ffffff;
+    padding: 1%;
+    margin-left:-6.8%;
+    margin-right:-6.8%;
+}
+
+
+/*classes used for font and homepage*/
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: left;
+    font-size:350%;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: left;
+    font-size:200%;
+}
+
+
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:80%;
+  text-align: justify;
+  text-align: left;
+
+
+
+}
+.center {
+ text-align: center;
+}
+
+.homepagetext
+{
+  border: 5px solid #000000;
+  border-radius: 4px;
+  padding:2%;
+  margin: 2%;
+}
+
+/*classes used for video and image in tour and safety pages*/
+
+img {
+  display: block;
+}
+
+iframe{
+  height:70%;
+  width:70%;
+  display: block;
+  margin: auto;
+  border: 10px solid #000000;
+  cursor: pointer;
+
+}
+
+.centerimage1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*classes used in the Crew Page for overlay. */
+
+.container {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.crewimage {
+  display: block;
+  width: 90%;
+  margin:5%;
+  height: 90%;
+  border: 5px solid #000000;
+  border-radius: 4px;
+}
+.storeimage {
+  display: block;
+  height: auto;
+  border: 5px solid #000000;
+  border-radius: 4px;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:5%;
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #57068c;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.crewtext {
+  color: white;
+  font-size: 200%;
+  padding:5%;
+  position: absolute;
+  text-align:justify;
+}
+
+
+
+/*classes used from Partner page*/
+.imgspon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #000000;
+    border-radius: 4px;
+}
+
+.centerimage 
+{
+  float:none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+.ldisplay{
+          float:none;
+          display: block;
+          width:30%;
+          height:5%;
+          font-size:100%;
+          background-color: #000000;
+          color: #ffffff;
+          cursor: pointer;
+          margin-left: auto;
+          margin-right: auto;
+
+          }
+.rdisplay{
+          float:none;
+          display: block;
+          width:30%;
+          height:5%;
+          font-size:100%;
+          background-color: #000000;
+          color: #ffffff;
+          cursor: pointer;
+          margin-left: auto;
+          margin-right: auto;
+
+}
+
+
+
+
+.displaynone{
+  display:none;
+}
+
+
+/*classes used to set heights of each ooage*/
+
+/*videopage class was used for both tour and safety pages*/
+.videopage{
+
+  padding:5%;
+  height:1000px;
+
+}
+
+.sponpage{
+  height:800px;
+  padding:5%
+}
+
+.homepage{
+    padding:2%;
+    margin: 2%;
+    color: black;
+    height:1000px;
+}
+
+.crewpage {
+  height:1500px;
+}

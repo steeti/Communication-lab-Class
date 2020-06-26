@@ -1,0 +1,128 @@
+html {
+  background-color: black;
+
+}
+
+body{
+  background-color:#ffffff;
+  margin:0;
+  padding:0;
+  margin-left:6%;
+  margin-right:6%;
+  margin-bottom:5%;
+}
+
+
+
+/* classes used for the tab headers */
+.left-alligned{
+  float:left;
+}
+.right-alligned{
+  text-align: center;
+}
+
+.button1 {
+  background-color: #e8e8e8;
+  color: #000000;
+  border: none;
+  padding: 16px 32px;
+  font-size: 150%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+
+}
+
+.button1:hover{
+  background-color: #000000;
+  color: #ffffff;
+
+}
+.active {
+  background-color: #000000;
+  color: #ffffff;
+
+}
+
+
+.header{
+    /* overflow: hidden; */
+    border-radius: 4px;
+    background-color:#e8e8e8;
+    padding: 1%;
+    margin-left:-7.8%;
+    margin-right:-7.8%;
+}
+
+
+/*classes used for font and homepage*/
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: left;
+    font-size:150%;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-align: left;
+    font-size:100%;
+}
+
+
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:80%;
+  text-align: justify;
+  text-align: left;
+
+
+
+}
+.center {
+ text-align: center;
+}
+
+.homepagetext
+{
+  border-style:solid;
+  padding:2%;
+  margin: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+
+}
+
+/*classes used for video and image in tour and safety pages*/
+
+img {
+  display: block;
+}
+
+
+.screenshot {
+  display: block;
+  width: 45%;
+  height: 90%;
+  border: 5px solid #ffffff;
+  border-radius: 4px;
+}
+
+
+
+
+
+.displaynone{
+  display:none;
+}
+
+
+
+.homepage{
+    padding:2%;
+    margin: 2%;
+    color: black;
+    height:1000px;
+}
