@@ -1,0 +1,205 @@
+@font-face { /* including the exact pause menu font which is used in GTA V  */
+  font-family: 'pauseMenuFont';
+  src: url('../assets/fonts/ChaletLondonNineteenSixty.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+
+@media only screen and (orientation:portrait){ /* media query to force user to turn to portrait to play video  */
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){ /* media query to force user to turn to portrait to play video  */
+        #warning-message { display:none; }
+    }
+#warning-message { /* styling for the msg to turn phone to landscape orientation */
+  margin-top: 50px;
+  font-family: pauseMenuFont;
+}
+
+body{ /* body styling for no scroll bars */
+
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.mfCursor { /* middle finger cursor class to be used as a toggle */
+  cursor: url('cursor.cur'), auto;
+}
+.punchCursor { /* punch cursor class to be used as a toggle */
+  cursor: url('Unavailable.cur'), auto;
+}
+.noCursor { /* no cursor class to be used as a toggle */
+  cursor: none;
+}
+
+.video-overlay { /* video overlay class for the animated blur effect when pausing */
+  pointer-events: none;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.video-container { /* video container class */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.video-container > video { /* video element styling */
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) { /* fix aspect ratio based on screen size */
+  .video-container > video {
+    height: 100%;
+  }
+}
+@media screen and (min-aspect-ratio: 1920/1080) {  /* fix aspect ratio based on screen size */
+  .video-container > video {
+    width: 100%;
+  }
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.pauseMenuContainer {  /* styling for class that contains the entire pause menu */
+  pointer-events: none;
+  display: none;
+  opacity:0;
+  z-index: 4;
+  position: absolute;
+  width:80%;
+  min-width: 100px;
+  left:10%;
+  background: rgb(0,0,0,0);
+  overflow-y: auto;
+  top: 5px;
+}
+@media (max-width: 768px) {  /* media query to allow for scrolling in mobile */
+    body {
+      max-height: auto;
+      overflow: auto;
+    }
+  }
+@media (min-width: 801px) {  /* changing top margin for pause menu large devices  */
+
+  .pauseMenuContainer {
+    display: none;
+    opacity:0;
+    z-index: 4;
+    position: absolute;
+    width:80%;
+    min-width: 100px;
+    left:10%;
+    background: rgb(0,0,0,0);
+    overflow-y: auto;
+    top: 50px;
+  }
+}
+
+nav > .nav.nav-tabs{  /* fully transparent tabs */
+    border: none;
+    color:#fff;
+    background: rgb(0,0,0,0);
+    border-radius:0;
+    padding:0;
+}
+
+.nav-tabs > .nav-link { /* nav links partially transparent, GTA V style */
+    background: rgb(0,0,0,0.7);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-link { /* buttons with GTA V menu font */
+  padding:2px;
+  color: white;
+  margin-top:5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-family: pauseMenuFont;
+}
+
+.nav-link:hover { /* hover style for buttons with GTA V menu font */
+  color: white;
+  background: rgb(0,0,0,0.5);
+  cursor: url('cursor.cur'), auto;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { /* top border green for active button just like GTA V menu */
+    color: black;
+    background: rgb(255,255,255,0.7);
+    box-shadow: 0 -5px 0 0 #ACECAA;
+    border: none;
+}
+
+.tab-content { /* margin for each tab content when selected */
+  margin-top: 10px;
+}
+
+.tab-pane { /* styling each tab content */
+
+  color: white;
+  padding: 6px;
+  font-family: pauseMenuFont;
+}
+
+.mapHolder { /* container for the map in pause menu vvery light bg like GTA V pause menu map*/
+  background: rgb(0,0,0,0.05) !important;
+}
+
+.pauseMenuTitle { /* pause menu title saying GTA NYU Abu Dhabi styling */
+  font-size: 25px;
+  font-weight: 900;
+  font-family: pauseMenuFont;
+  text-shadow: 0px 0px 4px black;
+  color: white;
+  margin-bottom: 5px;
+  letter-spacing: 0.01em;
+  padding: 0;
+}
+
+.pauseMenuMapImage { /* styling for pause menu map */
+ -webkit-filter: drop-shadow(0 0 50px #222);
+ filter: drop-shadow(0 0 50px #222);
+}
+
+.resume-button:hover { /* resume button hover - not used */
+  cursor:pointer;
+}
+
+
+.transparentContent { /* class to make transparent bg GTA V style */
+  background: rgb(0,0,0,0.7);
+}
+
+.box{ /* little style hack to get transparent border */
+  box-model: border-box;
+  border: 2px solid transparent;
+  background-clip:padding-box;
+}
+
+.missionContent { /* dynamic mission content styling */
+  padding: 6px;
+}
+
+.clickAllow {  /* class to be used to allow pointer events and be in front of the screen */
+  pointer-events: auto;
+  z-index: 100;
+}
