@@ -104,6 +104,17 @@ h2{
   margin-bottom: 2%;
 
 }
+.projectext
+{
+  border-style:solid;
+  padding:2%;
+  margin: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+  cursor: url('https://wenogk.github.com/comic-strip/assets/music36.png'), auto;
+
+}
+
 
 /*classes used for video and image in tour and safety pages*/
 
