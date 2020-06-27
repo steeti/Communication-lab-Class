@@ -127,12 +127,17 @@ img {
   display: block;
   width: 45%;
   height: 90%;
-  border: 5px solid #ffffff;
+  border: 5px solid #000000;
   border-radius: 4px;
 }
 
 
+.constructionclass
+{
 
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 .displaynone{
@@ -146,4 +151,10 @@ img {
     margin: 2%;
     color: black;
     height:1000px;
+}
+
+.hyperlink{
+  text-decoration: none;
+   color:white;
+   background-color:black;
 }
